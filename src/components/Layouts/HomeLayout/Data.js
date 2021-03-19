@@ -7,6 +7,6 @@ export const homeObjOne = {
     description: 'Organizație Inginirească ce îți va schimba viitorul',
     buttonLabel: 'Aplica aici',
     imgStart: '',
-    img: 'images/BEST_logomark.svg',
+    img: 'images/DeceBEST.png',
     alt: ''
 }

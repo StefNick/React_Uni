@@ -14,16 +14,10 @@ function Navbar() {
     const closeMobileMenu = () => setClick(false);
 
     const showButton = () => {
-        if(window.innerWidth <= 960) {
-            setButton(false)
-        } else {
-            setButton(true)
-        }
-    };
+        if(window.innerWidth <= 960) {setButton(false)} 
+        else {setButton(true)}};
 
-    useEffect(() => {
-        showButton();
-    },[]);
+    useEffect(() => {showButton();},[]);
 
     window.addEventListener('resize', showButton);
 
@@ -33,7 +27,8 @@ function Navbar() {
             <div className="navbar">
                 <div className="navbar-container container">
                     <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
-                        <DiCodeBadge className="navbar-icon" />BEST Chișinău
+                        <DiCodeBadge className="navbar-icon" />
+                                BEST Chișinău
                     </Link>
                     <div className="menu-icon" onClick={handleClick}>
                         {click ? <FaTimes /> : <FaBars />}
@@ -63,7 +58,7 @@ function Navbar() {
                                 <Link to="/apply" className="btn-link" onClick={closeMobileMenu}>
                                     <Button buttonStyle="btn--outline"
                                             buttonSize="btn--mobile"
-                                    ></Button>
+                                    >Apply</Button>
                                 </Link>
                             )}
                         </li>

@@ -54,7 +54,7 @@ function Navbar() {
                                 <Link to="/apply" className="btn-link" >
                                     <Button buttonStyle="btn--outline">Apply</Button>
                                 </Link>
-                            ): (
+                            ) : (
                                 <Link to="/apply" className="btn-link" onClick={closeMobileMenu}>
                                     <Button buttonStyle="btn--outline"
                                             buttonSize="btn--mobile"

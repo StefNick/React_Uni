@@ -4,6 +4,9 @@ import Home from './components/Layouts/HomeLayout/Home';
 import Navbar from './components/Navbar';
 import Projects from './components/Layouts/ProjectsLayout/Projects.jsx';
 import Footer from './components/Layouts/Footer/Footer';
+import Apply from './components/Layouts/Form/Apply.jsx';
+import FormApply from './components/Layouts/Form/FormApply';
+
 
 function App() {
   return (
@@ -12,7 +15,8 @@ function App() {
       <Switch>
         <Route path='/' exact component={Home}/>
         <Route path='/projects' exact component={Projects}/>
-        <Route path='/contactUs' />
+        <Route path='/contactus' />
+        <Route path='/apply' exact component={Apply}/>
 
       </Switch>
       <Footer />

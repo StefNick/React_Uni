@@ -53,7 +53,7 @@ function Footer() {
             
             <Link className='social-icon-link' to='/' target='_blank' aria-label='Twitter'><FaTwitter /></Link>
             
-            <Link className='social-icon-link' to='/' target='_blank' aria-label='LinkedIn'><FaLinkedin /></Link>
+            <Link className='social-icon-link' to={'//www.linkedin.com/company/best-chisinau'} target='_blank' aria-label='LinkedIn'><FaLinkedin /></Link>
           </div>
         </div>
       </section>

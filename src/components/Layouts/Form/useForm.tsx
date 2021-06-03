@@ -1,25 +1,40 @@
+//import { callback } from "node:util";
 import { useState, useEffect } from "react";
 
 const useForm = () => {
     const [values, setValues] = useState({
         nume:'',
-        prenume:'',
+        email:'',
         universitate:'',
         facultate:'',
         anul:''
 
-    })
-    const [errors, setErrors] = useState({})
+    });
+    const [errors, setErrors] = useState({});
+    const[isSubmitting, setIsSubmitting] = useState(false);
 
     const handleChange = e => {
-        const { name, value} = e.target
+        const { name, value} = e.target;
         setValues({
-            ...values
-            [name], value
-        })
+            ...values,
+            [name]: value
+        });
         
-}
-    return {handleChange}
-}
+};
+
+const handleSubmit = e => {
+    e.preventDefault();
+    // setErrors(validate(values));
+    // setIsSubmitting(true);
+};
+
+useEffect(
+    () => {
+        if (Object.keys(errors).length === 0 && isSubmitting) { callback(); }
+    },[errors]
+);
+
+    return {handleChange, handleSubmit, values, errors};
+};
 
 export default useForm;

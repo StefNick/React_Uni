@@ -5,7 +5,7 @@ import Navbar from './components/Navbar';
 import Projects from './components/Layouts/ProjectsLayout/Projects.jsx';
 import Footer from './components/Layouts/Footer/Footer';
 import Apply from './components/Layouts/Form/Apply.jsx';
-import FormApply from './components/Layouts/Form/FormApply';
+import FormApply from './components/Layouts/Form/FormApply.jsx';
 
 
 function App() {
